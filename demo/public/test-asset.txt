@@ -1,0 +1,1 @@
+This is a real static file with an extension. It must be served as-is, not rewritten to index.html.

@@ -1,0 +1,27 @@
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.wrangler/
+.vite/
+
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.dev.vars
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs and coverage
+logs/
+*.log
+coverage/
+.cache/

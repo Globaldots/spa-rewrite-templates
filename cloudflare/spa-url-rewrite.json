@@ -1,0 +1,13 @@
+{
+  "description": "SPA template",
+  "expression": "(http.host eq \"${SPA_HOSTNAME}\" and http.request.method in {\"GET\" \"HEAD\"} and http.request.uri.path.extension eq \"\")",
+  "action": "rewrite",
+  "enabled": true,
+  "action_parameters": {
+    "uri": {
+      "path": {
+        "value": "/index.html"
+      }
+    }
+  }
+}

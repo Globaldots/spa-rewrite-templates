@@ -1,0 +1,14 @@
+{
+  "_comment": "Phase http_request_origin. Change host_header (and origin.host if needed) to the S3 website or REST hostname. Add via POST to the existing Origin Rules ruleset; do not overwrite other origin rules.",
+  "ref": "s3_host_header",
+  "description": "Override Host header for the S3 origin",
+  "expression": "(http.host eq \"www.example.com\")",
+  "action": "route",
+  "enabled": true,
+  "action_parameters": {
+    "host_header": "my-bucket.s3-website-us-east-1.amazonaws.com",
+    "origin": {
+      "host": "my-bucket.s3-website-us-east-1.amazonaws.com"
+    }
+  }
+}
